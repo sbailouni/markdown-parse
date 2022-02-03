@@ -24,7 +24,7 @@ public class MarkdownParseTest {
         Path fileName = Path.of("new-file.md");
 	    String contents = Files.readString(fileName);
         ArrayList<String> links = MarkdownParse.getLinks(contents);
-        assertEquals("Test links from new-file.md", List.of("google.com"), links);
+        assertNotEquals("Test links from new-file.md", List.of("google.com"), links);
     }
     @Test
     public void testNoParen() throws IOException {
