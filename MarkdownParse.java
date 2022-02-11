@@ -4,8 +4,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.CloseAction;
-
 public class MarkdownParse {
     public static ArrayList<String> getLinks(String markdown) {
         ArrayList<String> toReturn = new ArrayList<>();
